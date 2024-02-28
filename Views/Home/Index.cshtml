@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center">
+
+    <@{
+        string[] cars = { "BMW", "Audi", "Szkoda" };
+        foreach (var item in cars)
+        {
+                <h1 class="display">@item</h1>
+        }
+    }
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
